@@ -1,10 +1,26 @@
+# nginx v1용 Service
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: nginx-v1
 spec:
   selector:
     app: nginx
+    version: v1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+# nginx v2용 Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-v2
+spec:
+  selector:
+    app: nginx
+    version: v2
   ports:
     - protocol: TCP
       port: 80
