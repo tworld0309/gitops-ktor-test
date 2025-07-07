@@ -3,5 +3,5 @@ resources:
   - service.yaml
   - virtualservice.yaml
   - istio-gateway.yaml
-
+  - destinationrule.yaml
 patchesStrategicMerge: []
