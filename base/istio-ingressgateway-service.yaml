@@ -9,7 +9,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    istio: ingressgateway
+    istio: NodePort
   ports:
     - name: status-port
       port: 15021
