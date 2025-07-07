@@ -36,7 +36,7 @@ spec:
         version: v2
     spec:
       containers:
-        - name: nginx
-          image: nginx:alpine
+        - name: nginxdemos
+          image: nginxdemos/hello
           ports:
             - containerPort: 80
