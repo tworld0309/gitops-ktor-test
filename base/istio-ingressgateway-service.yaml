@@ -7,7 +7,7 @@ metadata:
     app: istio-ingressgateway
     istio: ingressgateway
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     istio: ingressgateway
   ports:
@@ -25,4 +25,4 @@ spec:
       targetPort: 31400
     - name: tls
       port: 15443
-      targetPort: 15443 
+      targetPort: 15443
