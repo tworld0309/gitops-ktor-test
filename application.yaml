@@ -9,7 +9,7 @@ spec:
     namespace: default
   project: default
   source:
-    repoURL: https://your.git.repo.url/nginx-canary
+    repoURL: https://github.com/tworld0309/gitops-ktor-test
     targetRevision: HEAD
     path: overlays/prod
   syncPolicy:
